@@ -1,0 +1,349 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background: -webkit-linear-gradient(to right, #8E54E9, #4776E6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #8E54E9, #4776E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* removes list style */
+#nav-bar{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* makes items horizontal */
+li{
+    float: left;
+}
+
+li a{
+    display: block;
+    color: #feffff;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover{
+    background-color: #8E55C9;
+}
+
+.logo{
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    float:right;
+}
+
+#my-paragraph{
+    text-align: center;
+    padding: 1px;
+    background-color: #feffff;
+}
+
+#my-name{
+    font-size: 120px;
+    background: -webkit-linear-gradient(#8E55C9, #4776E6);
+   -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#welcome{
+    font-size: 40px;
+    background: -webkit-linear-gradient(#8E55C9, #4776E6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#about-paragraph{
+    font-size: 20px;
+    margin:10px 8px 10px 10px;
+}
+
+.white-head{
+    color: #feffff; 
+    font-size: 40px;
+}
+
+.rugby_image{
+    position: relative;
+    width:400px;
+}
+
+.rugby_image__img{
+    display: block;
+    width: 100%;
+}
+
+.rugby_image__overlay{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    color:#fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.rugby_image__overlay >*{
+    transform: translateY(20px);
+}
+
+.rugby_image__overlay:hover{
+    opacity: 1;
+}
+
+.rugby_image__title{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.rugby_image__description{
+    font-size: 1.25em;
+    margin: 0.5em 1.05em;
+}
+
+.rugby_image{
+    width: 400px;
+    height: 400px;
+}
+
+.rugby_image__img{
+    width: 400px;
+    height: 400px;
+    justify-content: space-between;
+}
+
+#about-images{
+    display: flex;
+    flex: 100%;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+#riga-head{
+    font-size: 55px;
+    background: -webkit-linear-gradient(#8E55C9, #4776E6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+#riga-description{
+    font-size: 35px;
+    background: -webkit-linear-gradient(#8E55C9, #4776E6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+#hover-answer{
+    position:relative;
+    display: inline-block;
+    font-size: 35px;
+    background: -webkit-linear-gradient(#8E55C9, #4776E6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+#hover-answer #answer{
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color:#fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0px;
+    position: absolute;
+    z-index: 1;
+}
+
+#hover-answer:hover #answer{
+    visibility: visible;
+    font-size: 25px;
+    color: -webkit-linear-gradient(#8E55C9, #4776E6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+#other-countries-head{
+    text-align: center;
+    background: -webkit-linear-gradient(#8E55C9, #4776E6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 30px;
+    padding-top:10px;
+}
+.img-container{
+    height:500px;
+    width: 500px;
+    position:relative;
+    float:left;
+}
+
+#russian-words{
+    padding:5px 10px;
+    font-size: 2em;
+    background: -webkit-linear-gradient(#8E55C9, #4776E6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+#experience-paragraph{
+    font-size: 20px;
+    margin:10px 8px 10px 10px;
+}
+
+.company-title{
+    background-color: #feffff;
+    height: 320px;
+}
+
+#ibkr_image_img{
+    height: 300px;
+    width: 300px;
+    padding:5px 10px 5px 5px;
+}
+
+#ibkr_image_title{
+    background: -webkit-linear-gradient(#8E55C9, #4776E6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-size: 30px;
+}
+
+.ibkr_text{
+    background: -webkit-linear-gradient(#8E55C9, #4776E6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-size: 18px;
+    list-style-position: inside;
+    letter-spacing: 1.5px;
+    overflow: hidden;
+}
+
+#jaxis_image_img{
+    height: 300px;
+    width: 300px;
+    padding:5px 10px 5px 5px;
+}
+
+#jaxis_image_title{
+    background: -webkit-linear-gradient(#8E55C9, #4776E6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-size: 30px;
+}
+
+.jaxis_text{
+    background: -webkit-linear-gradient(#8E55C9, #4776E6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-size: 18px;
+    list-style-position: inside;
+    overflow: hidden;
+    letter-spacing: 1.5px;
+}
+
+#mzz_image_img{
+    height: 300px;
+    width: 300px;
+    padding:5px 10px 5px 5px;
+}
+
+#mzz_image_title{
+    background: -webkit-linear-gradient(#8E55C9, #4776E6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-size: 30px;
+}
+
+.mzz_text{
+    background: -webkit-linear-gradient(#8E55C9, #4776E6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-size: 18px;
+    list-style-position: inside;
+    overflow: hidden;
+    letter-spacing: 1.5px;
+}
+
+#technical_skills{
+    background: -webkit-linear-gradient(#8E55C9, #4776E6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 50px;
+}
+
+.skills{
+    background-color:#feffff;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skills_pic{
+    width:200px;
+    height: 200px;
+    padding:15px 35px;
+    position: relative;
+}
+.contact-box{
+    width: 500px;
+    background-color: #fff;
+    box-shadow: 0 0 20px 0 #999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+}
+
+form{
+    margin: 35px;
+}
+
+.input-field{
+    width: 400px;
+    height: 40px;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #777;
+    border-radius: 14px;
+    outline: none;
+}
+
+.btn{
+    border-radius: 20px;
+    color: -webkit-linear-gradient(#8E55C9, #4776E6);
+    margin: 20px;
+    padding: 10px;
+    background-color: #feffff;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    width: 5%;
+}
+
+.btn:hover{
+    background-color: #4776E6;
+    transition: 0.3s ease;
+}
